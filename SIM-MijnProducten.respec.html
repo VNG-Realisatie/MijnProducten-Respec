@@ -1,0 +1,1005 @@
+<!DOCTYPE HTML><h2>Gegevensdefinitie</h2><p><b>Deze tekst is normatief.</b><!--SIM-MijnProducten-0.1.0-1-20260424-20260424-163012 imvertor 4.5.0--></p><div class="imageinfo overview"><figure class="uml-diagram"><img id="EAID_2AB46983_B9B5_4893_8C0C_19C376776A2A" src="Images/EAID_2AB46983_B9B5_4893_8C0C_19C376776A2A.png" usemap="#imagemap-EAID_2AB46983_B9B5_4893_8C0C_19C376776A2A" alt="Diagram: Dit conceptuele informatiemodel betreft de interactie tussen gemeente (ACTOR) en burger / onderneming (PARTIJ) via de mijn-omgeving en het medewerkersportaal, over producten. Dit informatiemodel is gerelateerd aan een aantal andere informatiemodellen. Klantinteracties (halfproduct in ontwikkeling), zie ACTOR, PARTIJ en de referentielijst Landen. Producten en diensten / PDC / Producttypecatalogus / UPL Centraal in het model staat het product dat de gemeente (actor) levert aan de klant van de gemeente (partij)."><figcaption> ‒ Diagram: SIM Mijn­Producten</figcaption></figure><map name="imagemap-EAID_2AB46983_B9B5_4893_8C0C_19C376776A2A"><area shape="rect" alt="Productaspectbeschrijving" coords="1420,306,1661,428" href="#global_class_Model_Productaspectbeschrijving"><area shape="rect" alt="Taalafhankelijke productbeschrijving" coords="970,230,1328,428" href="#global_class_Model_Taalafhankelijkeproductbeschrijving"><area shape="rect" alt="PRODUCTTYPE" coords="393,68,866,427" href="#global_class_Model_PRODUCTTYPE"><area shape="rect" alt="PRODUCT" coords="503,599,755,757" href="#global_class_Model_PRODUCT"><area shape="rect" alt="Actor" coords="48,599,309,721" href="#global_class_Model_Actor"><area shape="rect" alt="Partij" coords="970,599,1231,709" href="#global_class_Model_Partij"></map><p>
+                        <p>Dit conceptuele informatiemodel betreft de interactie tussen gemeente (ACTOR) en burger / onderneming (PARTIJ) via de mijn-omgeving en het medewerkersportaal, over producten. Dit informatiemodel is gerelateerd aan een aantal andere informatiemodellen.</p>
+                        <p></p>
+                        <ul>
+                           <li>Klantinteracties (halfproduct in ontwikkeling), zie ACTOR, PARTIJ en de referentielijst Landen.</li>
+                           <li>Producten en diensten / PDC / Producttypecatalogus / UPL</li>
+                        </ul>
+                        <p></p>
+                        <p>Centraal in het model staat het product dat de gemeente (actor) levert aan de klant van de gemeente (partij).</p>
+                     </p></div><section id="global_class_Model_PRODUCT"><h3>   PRODUCT</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>PRODUCT</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Het tastbaar goed of de geleverde dienst. 
+N.B.:
+
+Is onderscheid nodig tussen product en exemplaar van een product? De exemplaren van een product van een bepaald producttype die in concrete gevallen aan inwoners en ondernemers geleverd gaan worden of al geleverd zijn.
+Bij concrete producten horen bijvoorbeeld kenmerken als een verloopdatum (in geval van een uitgegeven paspoort of rijbewijs), een periode (bij een verleende ontheffing) of een bedrag (horend bij een verstrekte subsidie). Het bedrag zien we hier (nog) niet terug.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Unieke identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCT_Datumgeldigtotenmet">Datum geldig tot-en-met</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCT_Datumgeldigvanaf">Datum geldig vanaf</a>
+                     </td><td>De start datum van dit product.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCT_Indicatiegepubliceerd">Indicatie gepubliceerd</a>
+                     </td><td>De indicatie die aangeeft of het product wel / niet getoond kan worden.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Boolean</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCT_Uniekeidentificatie">Unieke identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        PRODUCT
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCT_iseigendomvan">is eigendom van</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_Partij">Partij</a>
+                        
+                        [ 1 ]
+                     </td><td></td></tr><tr><td>
+                        PRODUCT
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCT_isofzalwordengeleverddoor">is of zal worden geleverd door</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_Actor">Actor</a>
+                        
+                        [ 1 ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCTTYPE_isexemplaarvan">is exemplaar van</a>
+                        
+                        PRODUCT
+                        [ 0 .. * ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_Partij"><h3>   Partij</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Partij</td></tr><tr><th scope="row">Herkomst</th><td>Klantinteracties</td></tr><tr><th scope="row">Definitie</th><td>Persoon of organisatie waarmee de gemeente een relatie heeft.</td></tr><tr><th scope="row">Herkomst definitie</th><td>Klantinteracties</td></tr><tr><th scope="row">Datum opname</th><td>16-02-2023</td></tr><tr><th scope="row">Unieke aanduiding</th><td>Unieke identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Ja</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_Partij_Uniekeidentificatie">Unieke identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_PRODUCT">PRODUCT</a>
+                        
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCT_iseigendomvan">is eigendom van</a>
+                        
+                        Partij
+                        [ 1 ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_Actor"><h3>   Actor</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Actor</td></tr><tr><th scope="row">Herkomst</th><td>Klantinteracties</td></tr><tr><th scope="row">Definitie</th><td>Iets dat of iemand die voor de gemeente werkzaamheden uitvoert.</td></tr><tr><th scope="row">Herkomst definitie</th><td>Klantinteracties</td></tr><tr><th scope="row">Datum opname</th><td>16-02-2023</td></tr><tr><th scope="row">Unieke aanduiding</th><td>Unieke identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Ja</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_Actor_Uniekeidentificatie">Unieke identificatie</a>
+                     </td><td>De naam van de actor.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_PRODUCT">PRODUCT</a>
+                        
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCT_isofzalwordengeleverddoor">is of zal worden geleverd door</a>
+                        
+                        Actor
+                        [ 1 ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_PRODUCTENCATALOGUS"><h3>   PRODUCTENCATALOGUS</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>PRODUCTENCATALOGUS</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De verzameling van producten (incl. diensten) voor een domein of die door een organisatie aangeboden worden aan anderen en als één geheel beheerd worden.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>24-9-2020</td></tr><tr><th scope="row">Unieke aanduiding</th><td>Domein + Organisatie-identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_Begindatumversie">Begindatum versie</a>
+                     </td><td>Datum waarop de versie van de productencatalogus van toepassing is geworden. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_Beherendeorganisatie">Beherende organisatie</a>
+                     </td><td>De naam van de organisatie die verantwoordelijk is voor het beheer van de productencatalogus.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_Contactpersoonbeheeremailadres">Contactpersoon beheer emailadres</a>
+                     </td><td>Het emailadres van de contactpersoon die namens de verantwoordelijke organisatie het beheer van de productencatalogus coordineert. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_Contactpersoonbeheernaam">Contactpersoon beheer naam</a>
+                     </td><td>De naam van de contactpersoon die namens de verantwoordelijke organisatie het beheer van de productencatalogus coordineert.  </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_Doelgroep">Doelgroep</a>
+                     </td><td>De groep van afnemers waarvoor de productencatalogus bedoeld is. </td><td>
+                        <a class="link" href="#detail_class_Model_doelgroep">doelgroep</a>
+                     </td><td>1 .. 3</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_Domein">Domein</a>
+                     </td><td>De afkorting waarmee wordt aangegeven voor welk aandachtsgebied in een PDC producten zijn uitgewerkt.</td><td>
+                        <a class="link" href="#global_class_Model_Domein">Domein</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_Naam">Naam</a>
+                     </td><td>De benaming die is gegeven aan de productencatalogus.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_Organisatieidentificatie">Organisatie-identificatie</a>
+                     </td><td>Identificerend kenmerk van de organisatie die verantwoordelijk is voor (de inhoud van) de productencatalogus </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_ReferentiePDC">Referentie-PDC</a>
+                     </td><td>Indicatie of (de implementatie van) de PDC een referentiecatalogus dan wel een operationele catalogus betreft.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Boolean</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_Toelichting">Toelichting</a>
+                     </td><td>Uitleg ter verduidelijking van doel en inhoud van de productencatalogus.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTENCATALOGUS_Versie">Versie</a>
+                     </td><td>Versie-aanduiding van de van toepassing zijnde versie van de productencatalogus.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        PRODUCTENCATALOGUS
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCTENCATALOGUS_isgespecificeerdvoor">is gespecificeerd voor</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a>
+                        
+                        [ 0 .. * ]
+                     </td><td>De referentieproductencatalogus waarvan de catalogus is afgeleid.  </td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a>
+                        
+                        [ 1 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCTTYPE_isgespecificeerdin">is gespecificeerd in</a>
+                        
+                        PRODUCTENCATALOGUS
+                        [ 1 ]
+                     </td><td>De PRODUCTENCATALOGUS waarin het PRODUCT is opgenomen. </td></tr></tbody></table>
+               
+            
+            <section class="notoc"><h4>Toelichting  </h4>
+                        <p>Het objecttype modelleert een catalogus an sich, als verzameling van (specificaties van) producttypen voor een bepaald domein. Twee soorten catalogi worden onderscheiden: een referentie-PDC en een operationele PDC. In een referentie PDC leggen organisaties voor een domein gezamenlijk te hanteren specificaties vast van producttypen. In een operationele PDC neemt een organisatie producttypen op voor een door haar gekozen domein. Indien deze ontleend zijn aan een referentiecatalogus (er kunnen ook 'eigen' producttypen opgenomen worden), kan voor de specificaties verwezen worden naar de referentiecatalogus. </p>
+                        <p>Tevens kunnen enkele organisaties binnen een domein waarvoor een referentieproductencatalogus is opgesteld, gezamenlijk een eigen referentiecatalogus opstellen voor (een deel van) dat domein, met bijvoorbeeld meer referentieproducttypen. Een dergelijke referentiecatalogus maakt gebruik van de referentiecatalogus voor het domein als geheel. Er ontstaat op deze wijze een 'stelsel van getrapte referentiecatalogi'.  </p>
+                        <p>Een organisatie kan meerdere PDC's beheren, onderscheiden naar domein.  </p>
+                        <p>Een hierop gebaseerde fysieke producten- en dienstencatalogus wordt gewijzigd in versies. De daarin opgenomen producttypen hebben geen eigen versionering maar die van de PDC als geheel.  </p>
+                        <p>  </p>
+                        <p>We spreken in het model van ‘product’ en niet van ‘product of dienst’ aangezien een dienst beschouwd kan worden als een soort of vorm van een product. ‘Product’ is de generieke term voor product en dienst.  </p>
+                     </section>
+            <h4>Overzicht constraints  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="col">Naam</th><th scope="col">Uitleg</th></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Begindatum versie'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Beherende organisatie'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Contactpersoon beheer emailadres'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Contactpersoon beheer naam'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Doelgroep'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Naam'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Organisatie-identificatie'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Referentie-PDC'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Toelichting'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Versie'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from relation 'is gespecificeerd voor' to 'PRODUCTENCATALOGUS'</name>
+                        
+                     </th><td></td></tr></tbody></table>
+            
+         </section><section id="global_class_Model_PRODUCTTYPE"><h3>   PRODUCTTYPE</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>PRODUCTTYPE</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Een soort tastbaar goed of dienst waarmee de leverende organisatie in een bepaalde behoefte voorziet.  </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>30-4-2020</td></tr><tr><th scope="row">Unieke aanduiding</th><td>Productcode, PRODUCTTYPE is gespecificeerd in PRODUCTENCATALOGUS</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Afnemer">(Afnemer)</a>
+                     </td><td>De naam van de samenwerkingspartner waarmee afspraken zijn gemaakt over levering van het producttype. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. *</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Beoogdresultaat">(Beoogd resultaat)</a>
+                     </td><td>Het individuele en/of maatschappelijke resultaat dat wordt beoogd met afname van dit product. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Doelgroep">(Doelgroep)</a>
+                     </td><td>De groep van afnemers waarvoor het product bedoeld is. </td><td>
+                        <a class="link" href="#detail_class_Model_doelgroep">doelgroep</a>
+                     </td><td>0 .. 3</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Eigenaar">(Eigenaar)</a>
+                     </td><td>De organisatorische eenheid of medewerker die verantwoordelijk is voor het kunnen leveren van het producttype. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Grondslag">(Grondslag)</a>
+                     </td><td>De al dan niet juridische  grondslag op basis waarvan het producttype geleverd wordt. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Indicatieaanvraagbaar">(Indicatie aanvraagbaar)</a>
+                     </td><td>Aanduiding of levering van een product van het producttype d.m.v. een daartoe strekkende aanvraag in gang gezet kan worden.   </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Boolean</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Servicetermijn">(Servicetermijn)</a>
+                     </td><td>De periode waarbinnen het product wordt geleverd na bestelling daarvan. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Soortbevoegdgezag">(Soort bevoegd gezag)</a>
+                     </td><td>Het soort bestuursorgaan dat wettelijk bevoegd is dit producttype te leveren. </td><td>
+                        <a class="link" href="#detail_class_Model_soort_bevoegd_gezag">soort_bevoegd_gezag</a>
+                     </td><td>0 .. 4</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Soorttaak">(Soort taak)</a>
+                     </td><td>De categorie van werkzaamheden waarvoor de productleverende organisatie verantwoordelijk is waaruit de levering van het producttype voortkomt.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. *</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Uitvoeringsorganisatie">(Uitvoeringsorganisatie)</a>
+                     </td><td>De organisatie die verantwoordelijk is voor de feitelijke levering van producten van het producttype.  </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_UPLproductnaam">(UPL-productnaam)</a>
+                     </td><td>De naam van het product in de Uniforme Productnamenlijst dat overeenkomt met het product in de (referentie-)catalogus. </td><td>
+                        <a class="link" href="#global_class_Model_UPLproducttype">UPL-producttype</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Wettelijketermijn">(Wettelijke termijn)</a>
+                     </td><td>De wettelijk voorgeschreven periode waarbinnen het product moet worden geleverd na bestelling daarvan.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PRODUCTTYPE_Productcode">Productcode</a>
+                     </td><td>De aanduiding die het product uniek identificeert binnen de productencatalogus.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>
+                        Taalafhankelijke productbeschrijving
+                     :</td><td>Beschrijvingen van het product in een specifieke taal. </td><td>
+                        <a class="link" href="#detail_class_Model_Taalafhankelijkeproductbeschrijving">Taalafhankelijke productbeschrijving</a>
+                     </td><td>0 .. *</td></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Omschrijving">Omschrijving</a>
+                     </td><td>Een bondige beschrijving van het producttype. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>- 
+                        Productaspectbeschrijving
+                     </td><td>Uitleg van een aspect van producten van het producttype ter verduidelijking van doel, aard, levering  e.d. van die producten. [Gg]</td><td>
+                        <a class="link" href="#global_class_Model_Productaspectbeschrijving">Productaspectbeschrijving</a>
+                     </td><td>0 .. *</td></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Productnaam">Productnaam</a>
+                     </td><td>De korte benaming van het product.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Taal">Taal</a>
+                     </td><td>De taal waarin de productbeschrijvingen gesteld zijn. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Trefwoord">Trefwoord</a>
+                     </td><td>Woord waarmee het producttype gekarakteriseerd wordt. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. *</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        PRODUCTTYPE
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCTTYPE_isexemplaarvan">is exemplaar van</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PRODUCT">PRODUCT</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        PRODUCTTYPE
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCTTYPE_draagtbijaan">draagt bij aan</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a>
+                        
+                        [ 0 .. * ]
+                     </td><td>Het andere producttype waarvoor het producttype benodigd is om een product van dat andere producttype te kunnen leveren.</td></tr><tr><td>
+                        PRODUCTTYPE
+                        [ 1 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCTTYPE_isgespecificeerdin">is gespecificeerd in</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a>
+                        
+                        [ 1 ]
+                     </td><td>De PRODUCTENCATALOGUS waarin het PRODUCT is opgenomen. </td></tr><tr><td>
+                        PRODUCTTYPE
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCTTYPE_betreft">betreft</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a>
+                        
+                        [ 0 .. 1 ]
+                     </td><td>Het referentieproduct dat als product is overgenomen in de productencatalogus. </td></tr><tr><td>
+                        PRODUCTTYPE
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PRODUCTTYPE_isproductuitvoeringvan">is productuitvoering van</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a>
+                        
+                        [ 0 .. 1 ]
+                     </td><td>Een specifieke manier waarop een product van het PRODUCTTYPE vervaardigd wordt.</td></tr></tbody></table>
+               
+            
+            <section class="notoc"><h4>Toelichting  </h4>
+                        <p>Het betreft de modellering van een producttype dat een organisatie kan leveren aan burgers en aan andere organisaties, zoals een paspoort, een vergunning of een advies, en dat die burgers en andere organisaties bij die organisatie kunnen bestellen. Een producttype kan in meerdere talen beschreven worden. Soms kan een product in verschillende uitvoeringen geleverd worden, het ene producttype is dan een productuitvoering van een ander producttype. Dit is gemodelleerd met de gelijknamige relatie.  </p>
+                        <p>Een product kan een (tastbaar) goed of een dienst betreffen. Een goed is stoffelijk, bijvoorbeeld een stofzuiger of een appel, terwijl een dienst niet stoffelijk is. Een dienst is vluchtig en moet afgenomen worden op het moment van productie. Een voorbeeld is een bioscoopkaartje, dat verlopen is als de houder ervan niet tijdig in de bioscoop arriveert. De dienstverlening heeft dan al plaatsgevonden. Een ander voorbeeld is een consult, bijvoorbeeld bij de huisarts, dat meestal op een bepaald tijdstip staat gepland.</p>
+                        <p>Een door een organisatie te leveren product kan een product in de referentiecatalogus betreffen. Die organisatie heeft dan dat product daartoe in haar productencatalogus overgenomen. Specificaties van laatstgenoemd product worden dan ontleend aan de referentiecatalogus. Indien het een product in een organisatiespecifieke catalogus betreft dat niet opgenomen is in een referentiecatalogus, dan wordt dat gespecificeerd d.m.v. de gemodelleerde attribuutsoorten.  </p>
+                        <p></p>
+                        <p></p>
+                     </section>
+            <h4>Overzicht constraints  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="col">Naam</th><th scope="col">Uitleg</th></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Afnemer'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Beoogd resultaat'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Conditie'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Doelgroep'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Grondslag'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Omschrijving'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Productcode'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Productnaam'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Servicetermijn'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Soort bevoegd gezag'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Soort taak'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Toelichting'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'UPL-productnaam'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from attribute 'Wettelijke termijn'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from relation 'betreft' to 'PRODUCT'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from relation 'draagt bij aan' to 'PRODUCT'</name>
+                        
+                     </th><td></td></tr><tr><th scope="row">
+                        
+                           <name>Constraint from relation 'is gespecificeerd in' to 'PRODUCTENCATALOGUS'</name>
+                        
+                     </th><td></td></tr></tbody></table>
+            
+         </section><section id="global_class_Model_Domein"><h3>Referentielijst   Domein</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Domein</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Het aandachtstgebied waarop een PDC gericht is.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Data locatie</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Domeincode</td></tr><tr><th scope="row">Mnemonic</th><td>  </td></tr></tbody></table>
+            <section><h4>Overzicht referentie elementen   </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Referentie element</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_Domein_Domeincode">Domeincode</a>
+                     </td><td>De code waarmee  het aandachtsgebied geduid wordt waarop een PDC gericht is.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_Domein_Domeinomschrijviing">Domeinomschrijviing</a>
+                     </td><td>Bondige beschrijving van het aandachtsgebied waarop een PDC gericht is.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            </section>
+            <section class="notoc"><h4>Toelichting  </h4>Betreft de opsomming van de domeinen waarop de diverse PDC's gericht zijn. </section>
+         </section><section id="global_class_Model_Productaspectonderwerp"><h3>Referentielijst   Productaspectonderwerp</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Productaspectonderwerp</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Benaming van het onderwerp van een aspect van de beschrijving van een producttype.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Data locatie</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Onderwerp + Taal</td></tr><tr><th scope="row">Mnemonic</th><td>  </td></tr></tbody></table>
+            <section><h4>Overzicht referentie elementen   </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Referentie element</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_Productaspectonderwerp_Omschrijving">Omschrijving</a>
+                     </td><td>Een bondige beschrijving van het onderwerp. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_Productaspectonderwerp_Onderwerp">Onderwerp</a>
+                     </td><td>Benaming, in de desbetreffende taal, van een aspect waarnaar een producttype beschreven kan worden. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_Productaspectonderwerp_PDCdomein">PDC-domein</a>
+                     </td><td>Het aandachtsgebied van de PDC waarvoor het onderwerp geldt. .</td><td>
+                        <a class="link" href="#global_class_Model_Domein">Domein</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_Productaspectonderwerp_PDCorganisatieId">PDC-organisatie-Id</a>
+                     </td><td>De organisatie die verantwoordelijk is voor de PDC waarvoor het onderwerp geldt.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_Productaspectonderwerp_Taal">Taal</a>
+                     </td><td>De aanduiding van de taal waarin het onderwerp gesteld is. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_Productaspectonderwerp_Toelichting">Toelichting</a>
+                     </td><td>Opmerkingen over herkomst en gebruik van het onderwerp. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr></tbody></table>
+            </section>
+            <section class="notoc"><h4>Toelichting  </h4>
+                        <p>Deze referentielist bevat de opsomming van onderwerpen, in de onderscheiden talen, waarmee producttypen beschreven kunnen worden. Een onderwerp kan landelijk gelden maar kan ook specifieke zijn voor een bepaalde catalogus.  </p>
+                        <p>Onderwerpen kunnen gesteld zijn in de onderscheiden talen. Van een onderwerp in een andere taal dan Nederlands, kan vastgelegd worden met welk nederlandstalig onderwerp dit overeen komt.  </p>
+                     </section>
+         </section><section id="global_class_Model_UPLproducttype"><h3>Referentielijst   UPL-producttype</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>UPL-producttype</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Een producttype in de Uniforme Productnamen­Lijst (UPL).</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-6-2023</td></tr><tr><th scope="row">Data locatie</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td> </td></tr><tr><th scope="row">Mnemonic</th><td>  </td></tr></tbody></table>
+            <section><h4>Overzicht referentie elementen   </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Referentie element</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_UPLproducttype_UPLproductnaam">UPL-productnaam</a>
+                     </td><td>De benaming van een product in de Uniforme Productnamen­Lijst. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            </section>
+            <section class="notoc"><h4>Toelichting  </h4>Betreft de proxy ('mapping') van het in de UPL-modellering cq. - registratie beschikbare objecttype met alleen de attribuutsoorten daarvan die voor het voorliggende model relevant zijn. Zie voor meer informatie: (https://standaarden.overheid.nl/owms/oquery/UPL-actueel.plain) </section>
+         </section><section id="global_class_Model_Productaspectbeschrijving"><h3>Gegevensgroep   Productaspectbeschrijving</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Productaspectbeschrijving</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Uitleg van een aspect van producten van het producttype ter verduidelijking van doel, aard, levering  e.d. van die producten. [Gt]  </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>27-4-2023</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Productaspectbeschrijving_Onderwerp">Onderwerp</a>
+                     </td><td>Benaming, in de desbetreffende taal, van het aspect van het producttype dat beschreven wordt. </td><td>
+                        <a class="link" href="#global_class_Model_Productaspectonderwerp">Productaspectonderwerp</a>
+                     </td><td>1</td></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Productaspectbeschrijving_Uitleg">Uitleg</a>
+                     </td><td>De beschrijving van het aspect van het producttype in de desbetreffende taal.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+         </section><section id="global_class_Model_Taalafhankelijkeproductbeschrijving"><h3>Gegevensgroep   Taalafhankelijke productbeschrijving</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Taalafhankelijke productbeschrijving</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Beschrijvingen van het product in een specifieke taal. [Gt] </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>27-4-2023</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Omschrijving">Omschrijving</a>
+                     </td><td>Een bondige beschrijving van het producttype. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Productnaam">Productnaam</a>
+                     </td><td>De korte benaming van het product.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Taal">Taal</a>
+                     </td><td>De taal waarin de productbeschrijvingen gesteld zijn. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Trefwoord">Trefwoord</a>
+                     </td><td>Woord waarmee het producttype gekarakteriseerd wordt. </td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. *</td></tr><tr><td>
+                        Productaspectbeschrijving
+                     :</td><td>Uitleg van een aspect van producten van het producttype ter verduidelijking van doel, aard, levering  e.d. van die producten. [Gg]</td><td>
+                        <a class="link" href="#detail_class_Model_Productaspectbeschrijving">Productaspectbeschrijving</a>
+                     </td><td>0 .. *</td></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Productaspectbeschrijving_Onderwerp">Onderwerp</a>
+                     </td><td>Benaming, in de desbetreffende taal, van het aspect van het producttype dat beschreven wordt. </td><td>
+                        <a class="link" href="#global_class_Model_Productaspectonderwerp">Productaspectonderwerp</a>
+                     </td><td>1</td></tr><tr><td>- 
+                        <a class="link" href="#detail_attribute_Model_Productaspectbeschrijving_Uitleg">Uitleg</a>
+                     </td><td>De beschrijving van het aspect van het producttype in de desbetreffende taal.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+         </section><section id="detail_class_Model_PRODUCT"><h3>   PRODUCT</h3>
+            <section id="detail_attribute_Model_PRODUCT_Datumgeldigtotenmet"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCT">PRODUCT</a> Datum geldig tot-en-met</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Datum geldig tot-en-met</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PRODUCT_Datumgeldigvanaf"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCT">PRODUCT</a> Datum geldig vanaf</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Datum geldig vanaf</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>De start datum van dit product.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PRODUCT_Indicatiegepubliceerd"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCT">PRODUCT</a> Indicatie gepubliceerd</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Indicatie gepubliceerd</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>De indicatie die aangeeft of het product wel / niet getoond kan worden.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Boolean</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PRODUCT_Uniekeidentificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCT">PRODUCT</a> Unieke identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Unieke identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_PRODUCT_iseigendomvan"><h4>Relatiesoort details  <a href="#global_class_Model_PRODUCT">PRODUCT</a> is eigendom van</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>is eigendom van</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_Partij">Partij</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie materiële historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_PRODUCT_isofzalwordengeleverddoor"><h4>Relatiesoort details  <a href="#global_class_Model_PRODUCT">PRODUCT</a> is of zal worden geleverd door</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>is of zal worden geleverd door</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_Actor">Actor</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie materiële historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_Partij"><h3>   Partij</h3>
+            <section id="detail_attribute_Model_Partij_Uniekeidentificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_Partij">Partij</a> Unieke identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Unieke identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+         </section><section id="detail_class_Model_Actor"><h3>   Actor</h3>
+            <section id="detail_attribute_Model_Actor_Uniekeidentificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_Actor">Actor</a> Unieke identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Unieke identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>De naam van de actor.</td></tr><tr><th scope="row">Herkomst definitie</th><td>Klantinteracties</td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Overig</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+         </section><section id="detail_class_Model_PRODUCTENCATALOGUS"><h3>   PRODUCTENCATALOGUS</h3>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_Begindatumversie"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Begindatum versie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Begindatum versie</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Datum waarop de versie van de productencatalogus van toepassing is geworden. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-10-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>datum</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_Beherendeorganisatie"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Beherende organisatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Beherende organisatie</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De naam van de organisatie die verantwoordelijk is voor het beheer van de productencatalogus.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>25-9-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Waarden van de 'Verkorte naam' van de (hoofdvestiging van de) 'Maatschappelijke activiteit' in het n­HR. </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Wie de beherende organisatie is, valt op te maken uit het Kv­K-nummer van de PRODUCTENCATALOGUS. Voor een referentiecatalogus krijgt het Kv­K-nummer-attribuut evenwel geen waarde en moet de naam vermeld worden. Optioneel kan die ook in andere gevallen vermeld worden.  </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_Contactpersoonbeheeremailadres"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Contactpersoon beheer emailadres</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Contactpersoon beheer emailadres</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Het emailadres van de contactpersoon die namens de verantwoordelijke organisatie het beheer van de productencatalogus coordineert. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-10-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td>254</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_Contactpersoonbeheernaam"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Contactpersoon beheer naam</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Contactpersoon beheer naam</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De naam van de contactpersoon die namens de verantwoordelijke organisatie het beheer van de productencatalogus coordineert.  </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-10-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Lengte</th><td>40</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>alle alfanumerieke tekens</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_Doelgroep"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Doelgroep</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Doelgroep</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De groep van afnemers waarvoor de productencatalogus bedoeld is. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-10-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1 .. 3</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_doelgroep">doelgroep</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Hiermee wordt aangegeven wie de beoogde afnemers zijn van de productencatalogus, de doelgroep(en) waarvoor de productencatalogus bedoeld is. De producten in de catalogus hebben in principe dezelfde doelgroep(en), in individuele gevallen kan dat verbijzonderd worden. Eén tot drie doelgroepen kunnen gespecificeerd worden, zie de enumeratie 'doelgroep'.  </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_Domein"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Domein</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Domein</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De afkorting waarmee wordt aangegeven voor welk aandachtsgebied in een PDC producten zijn uitgewerkt.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-10-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Domein">Domein</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Referentie-element 'Domeincode' in genoemde referentieljst.</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>De domein-aanduiding vormt samen met de Organisatie-identificatie de unieke aanduiding (identificatie) van een productencatalogus.</p>
+                           <p>Voor de waardenverzameling wordt door een beheerorganisatie een (externe) waardenlijst beheerd waarin wordt bijgehouden welke afkorting welk domein betreft.</p>
+                           <p>Indien het domein van een organisatiespecifieke PDC overeenkomt met het domein van de referentie PDC waarvan deze is afgeleid, dan is de waarde van deze attribuutsoort gelijk aan die van de referentie PDC.</p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_Naam"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Naam</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Naam</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De benaming die is gegeven aan de productencatalogus.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-10-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td>200</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>cijfers, letters, ",", "-"en "."</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Bijvoorbeeld: "Productencatalogus ketensamenwerking Omgevingswet" en "Productencatalogus Omgevingswet gemeente Meerpolder"</section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_Organisatieidentificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Organisatie-identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Organisatie-identificatie</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Identificerend kenmerk van de organisatie die verantwoordelijk is voor (de inhoud van) de productencatalogus </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>8-11-2021</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td>20</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Indien OIN: indeling OIN (20 cijfers).
+Indien Kv­K-nummer: "00000003" gevolgd door het KVK-nummer (8 posities, met evt. voorloopnullen) (in totaal 16 cijfers).</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>De verantwoordelijke voor de productencatalogus wordt in ieder geval vastgelegd als een een operationele catalogus betreft d.w.z. als het geen referentiecatalogus betreft. Bij een referentiecatalogus kan het zijn dat de verantwoordelijke geen organisatie is maar bijvoorbeeld een werkgroep. Dan volstaat het domein als identificatie van de productencatalogus.</p>
+                           <p>De verantwoordelijke voor de productencatalogus wordt geduid met één van twee soorten identificaties:  </p>
+                           <p>- het Kv­K-nummer, voorafgegaan door "00000003", zoals dat geregistreerd is in de Basisregistratie HR van de Kamer van Koophandel (Kv­K). Dit is het identificerende kenmerk van wat in het HR de 'maatschappelijke activiteit' heet. De meeste natuurlijke personen, zoals bv's, nv's en overheidsorganisaties, hebben een maatschappelijke activiteit. Ook een natuurlijk persoon kan een maatschappelijke activiteit hebben, bijvoorbeeld een zzp'er. Door het Kv­K-nummer vooraf te laten gaan door genoemde tekenreeks, heeft de waarde van de attribuutsoort dezelfde opbouw als die van het OIN.   </p>
+                           <p>- het OIN: het organisatie-identificatienummer voor niet-natuurlijke personen ten behoeve van het digitale berichtenverkeer met de overheid.  </p>
+                           <p>Een waarde voor een Kv­K-nummer betreft een tekenreeks van 16 cijfers, een waarde voor een OIN betreft een tekenreeks van 20 cijfers. Een OIN kan een maatschappelijke activiteit betreffen, in dat geval zijn de eerste 16 tekens gelijk aan de waarde voor een Kv­K-nummer maar worden deze gevolgd door vier nullen. </p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_ReferentiePDC"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Referentie-PDC</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Referentie-PDC</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Indicatie of (de implementatie van) de PDC een referentiecatalogus dan wel een operationele catalogus betreft.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-10-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Boolean</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>"ja": het betreft een referentie-PDC
+"nee":  het betreft een operationele PDC</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Zie voor het onderscheid tussen een referentie-PDC en een operationele PDC de toelichting bij PRODUCTENCATALOGUS. </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_Toelichting"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Toelichting</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Toelichting</td></tr><tr><th scope="row">Herkomst</th><td>VNG</td></tr><tr><th scope="row">Definitie</th><td>Uitleg ter verduidelijking van doel en inhoud van de productencatalogus.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG</td></tr><tr><th scope="row">Datum opname</th><td>24-9-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Markdown-formaat.</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTENCATALOGUS_Versie"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> Versie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Versie</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Versie-aanduiding van de van toepassing zijnde versie van de productencatalogus.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-10-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td>20</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>nn.nn.nn</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Een nieuwe versie van een referentie-productencatalogus wordt veelal alleen uitgebracht als de relevante wetgeving, voor het domein waarop de catalogus betrekking heeft, significant wijzigt. Voor een operationele catalogus kunnen er ook andere aanleidingen zijn om een nieuwe versie uit te brengen. </p>
+                           <p>De versie betreft de gehele PDC, versies worden niet ondersteund per product wat betekent dat voor alle producten dezelfde versionering, die van de PDC, geldt. </p>
+                        </section>
+            </section>
+            <section id="detail_association_Model_PRODUCTENCATALOGUS_isgespecificeerdvoor"><h4>Relatiesoort details  <a href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a> is gespecificeerd voor</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>is gespecificeerd voor</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De referentieproductencatalogus waarvan de catalogus is afgeleid.  </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-10-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie materiële historie</th><td>Ja</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Regels</th><td>1. De relatie wijzigt alleen gelijktijdig met een waardewijziging van de attributsoort 'Versie'.  </td></tr></tbody></table>
+               
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>De relatie specificeert de referentieproductencatalogus waaruit producttypen zijn overgenomen in de voorliggende productencatalogus. Tenzij bij een producttype anders aangegeven, gelden voor wat betreft die producttypen de specificaties zoals vermeld in de referentiecatalogus.  </p>
+                           <p>Een productencatalogus (operationeel of referentie) kan opgesteld zijn voor hetzelfde domein als waarvoor een (andere) referentieproductencatalogus is opgesteld (1..1-relatie). Ook is het mogelijk dat een organisatie een productencatalogus heeft opgesteld voor een domein waarvoor (nog) geen referentiecatalogus beschikbaar is (0..1-relatie). En het is mogelijk dat een organisatie een productencatalogus opstelt voor diverse domeinen waarbij er voor één of meer van die domeinen een referentiecatalogus beschikbaar is (1..n-relatie).  </p>
+                        </section>
+            </section>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+         </section><section id="detail_class_Model_PRODUCTTYPE"><h3>   PRODUCTTYPE</h3>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Afnemer"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Afnemer)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Afnemer)</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De naam van de samenwerkingspartner waarmee afspraken zijn gemaakt over levering van het producttype. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>1-3-2021</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td>45</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Waarden van de 'Verkorte naam' van de (hoofdvestiging van de) 'Maatschappelijke activiteit' in het n­HR. </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>In een organisatiespecifieke productencatalogus kan hiermee, indien een producttype bedoeld is voor (o.a.) samenwerkingspartners, gespecificeerd worden welke samenwerkingspartners hiervan afnemers zijn. Daartoe wordt van elke desbetreffende samenwerkingspartner de verkorte naam van de (hoofdvestiging van de) 'Maatschappelijke activiteit' uit het n­HR vermeld.  </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Beoogdresultaat"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Beoogd resultaat)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Beoogd resultaat)</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Het individuele en/of maatschappelijke resultaat dat wordt beoogd met afname van dit product. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>30-4-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Markdown-formaat.</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Een waarde van deze attribuutsoort legt de verbinding naar de situaties waarin dit product nodig is of waaraan het een bijdrage levert. Het stelt potentiële afnemers in staat zich te oriënteren op het, voor zijn of haar situatie, benodigde product. </p>
+                           <p>Indien het organisatiespecifieke product ontleend is aan een referentiecatalogus, dan wordt het beoogde resultaat niet opgenomen maar geldt de naam van het referentieproduct. </p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Doelgroep"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Doelgroep)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Doelgroep)</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De groep van afnemers waarvoor het product bedoeld is. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-10-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 3</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_doelgroep">doelgroep</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Enumeratie (waardenlijst).</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Hiermee wordt aangegeven wie de beoogde afnemers zijn van het product, de doelgroep waarvoor het product bedoeld is. </p>
+                           <p>Indien het product ontleend is aan een referentiecatalogus, dan wordt de doelgroep niet vermeld maar geldt de doelgroep van het referentieproduct. Indien de doelgroep van het product dezelfde is als de doelgroep van de productencatalogus waar het product deel van uit maakt, dan wordt de doelgroep eveneens niet vermeld en geldt de doelgroep van de productencatalogus. </p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Eigenaar"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Eigenaar)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Eigenaar)</td></tr><tr><th scope="row">Herkomst</th><td>Im­PDC-werkgroep</td></tr><tr><th scope="row">Definitie</th><td>De organisatorische eenheid of medewerker die verantwoordelijk is voor het kunnen leveren van het producttype. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>10-3-2023</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Naam van een organisatorische eenheid van de verantwoordelijke organisatie, zoals vermeld in een vastgestelde versie van de organisatiestructuur dan wel de naam van een medewerker zoals vermeld in de personeelsregistratie. </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Met het beschikbaar zijn van de eigenaar van een producttype is bekend wie aangesproken kan worden bij vragen of problemen met producten van dit producttype.  </p>
+                           <p>Vooralsnog wordt de naam tekstueel vastgelegd, in afwachting van een informatiemodel voor de organisatiestructuur en medewerkers van een organisatie.  </p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Grondslag"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Grondslag)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Grondslag)</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De al dan niet juridische  grondslag op basis waarvan het producttype geleverd wordt. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>30-4-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Markdown-formaat. </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Een producttype vindt zijn grondslag in een opdracht. Die opdracht kan voortkomen uit wet- en regelgeving (eventueel van toepassing op de opdrachtgever waarvoor de wet- en regelgeving wordt uitgevoerd), maar ook uit een contract of afspraak. Dit attribuutsoort benoemt die opdracht. </p>
+                           <p>Indien het producttype ontleend is aan een referentiecatalogus, dan wordt de grondslag niet opgenomen maar geldt de grondslag van het referentieproducttype. </p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Indicatieaanvraagbaar"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Indicatie aanvraagbaar)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Indicatie aanvraagbaar)</td></tr><tr><th scope="row">Herkomst</th><td>Im­PDC-werkgroep</td></tr><tr><th scope="row">Definitie</th><td>Aanduiding of levering van een product van het producttype d.m.v. een daartoe strekkende aanvraag in gang gezet kan worden.   </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>28-2-2023</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Boolean</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>"ja": levering van een product van het producttype is aan te vragen
+"nee": het initiatief voor levering van een product van het producttype ligt niet bij degene aan wie dat product geleverd wordt</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Met de attribuutsoort kan gespecificeerd worden of het product aan te vragen is dan wel dat het initiatief voor levering bij de leverende organisatie ligt. Maakt het mogelijk om ook producttypen in een PDC op te kunnen nemen die niet op aanvraag geleverd worden, zoals WOZ-aanslagen, gevolgen van hercontroles vanuit Sociaal Domein, handhavingsmaatregelen, rioolhuisaansluitingkaartjes en verkiezingen.  </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Servicetermijn"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Servicetermijn)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Servicetermijn)</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De periode waarbinnen het product wordt geleverd na bestelling daarvan. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>1-3-2021</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Duurformaat volgens ISO 8601 (xs:duration): P (n) Y (n) M (n) DT (n) H (n) M (n) S</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>De servicetermijn is de beoogde leveringstermijn van een product van het producttype, ongeacht de wettelijke termijn. Met dien verstande dat de servicetermijn niet langer kan zijn dan de wettelijke termijn. De servicetermijn is veelal  organisatie-gebonden d.w.z. elke organisatie hanteert hiervoor eigen normen. Ze wordt dan ook vooral opgenomen bij organisatiespecifieke producttypen, niet in referentiecatalogi. Zij wordt wel in een referentiecatalogus opgenomen indien voor het producttype geen wettelijke termijn geldt.</section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Soortbevoegdgezag"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Soort bevoegd gezag)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Soort bevoegd gezag)</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Het soort bestuursorgaan dat wettelijk bevoegd is dit producttype te leveren. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>1-3-2021</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 4</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_soort_bevoegd_gezag">soort_bevoegd_gezag</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Enumeratie (waardenlijst).</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>De attribuutsoort is alleen relevant voor referentieproductypen in een referentiecatalogus. In het geval van een operationele catalogus is bekend wie het bevoegd gezag is. </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Soorttaak"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Soort taak)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Soort taak)</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De categorie van werkzaamheden waarvoor de productleverende organisatie verantwoordelijk is waaruit de levering van het producttype voortkomt.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>30-4-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Markdown-formaat. </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Klanten - burgers, bedrijven, instellingen - van overheidsorganisaties hebben rechten en plichten. Deze zijn beschreven in wet- en regelgeving, die ook bepaalt dat bepaalde (soorten) overheidsorganisaties de taak hebben die rechten - na toetsing - in te willigen of de naleving van plichten te controleren en - indien nodig - te handhaven.  Overheidsorganisaties zijn verantwoordelijk voor de uitvoering van dit soort taken. Deze kunnen zijn ondergebracht in verschillende takenpakketten, bijvoorbeeld het opleggen van voorschriften (regulering) of het bewaken van naleving van wet- en regelgeving (toezicht). Het heeft de voorkeur de naamgeving in genoemde wet- en regelgeving te hanteren.  </p>
+                           <p>Indien het producttype ontleend is aan een referentiecatalogus, dan wordt het soort taak niet opgenomen maar geldt de soort taak van het referentieproducttype. </p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Uitvoeringsorganisatie"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Uitvoeringsorganisatie)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Uitvoeringsorganisatie)</td></tr><tr><th scope="row">Herkomst</th><td>SDG</td></tr><tr><th scope="row">Definitie</th><td>De organisatie die verantwoordelijk is voor de feitelijke levering van producten van het producttype.  </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>27-4-2023</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>  </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Waarden van de 'Verkorte naam' van de (hoofdvestiging van de) 'Maatschappelijke activiteit' in het n­HR.</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Voor veel producttypen is de uitvoeringsorganisatie ook de organisatie die de productencatalogus aanbiedt. Er zijn echter producttypen waarvoor de uitvoering is belegd bij een andere organisatie zoals een samenwerkingsverband. Een voorbeeld is de omgevingsvergunning. Gemeenten hebben de uitvoering van het verlenen van een omgevingsvergunning vaak belegd bij een regionale omgevingsdienst.  </p>
+                           <p>De attribuutsoort is alleen relevant voor producttypen in een operationele catalogus.  </p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_UPLproductnaam"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (UPL-productnaam)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(UPL-productnaam)</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De naam van het product in de Uniforme Productnamenlijst dat overeenkomt met het product in de (referentie-)catalogus. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>1-3-2021</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_UPLproducttype">UPL-producttype</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Attribuutsoort 'UPL-productnaam' in de genoemde referentielijst. </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Het gaat hier om een product uit de Uniforme Productnamenlijst (UPL). Dit is een lijst met uniforme naamgeving voor de producten en diensten van de Nederlandse overheid. De UPL is onderdeel van de Samenwerkende Catalogi-standaard. Zie verder https://standaarden.overheid.nl/upl</p>
+                           <p>De UPL-productnaam is alleen van toepassing indien het product overeen komt met een product in de UPL.</p>
+                           <p>Indien een product ontleend is aan een referentiecatalogus, dan wordt de UPL-productnaam niet opgenomen maar geldt de UPL-productnaam van het referentieproduct.</p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Wettelijketermijn"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> (Wettelijke termijn)</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>(Wettelijke termijn)</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De wettelijk voorgeschreven periode waarbinnen het product moet worden geleverd na bestelling daarvan.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>1-3-2021</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Duurformaat volgens ISO 8601 (xs:duration): P (n) Y (n) M (n) DT (n) H (n) M (n) S</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Indien voor een producttype geen wettelije termijn geldt, dan wordt deze attribuutsoort niet van een waarde voorzien maar wordt de leveringstermijn gespecificeerd d.m.v. de attribuutsoort 'Servicetermijn'. </section>
+            </section>
+            <section id="detail_attribute_Model_PRODUCTTYPE_Productcode"><h4>Attribuutsoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> Productcode</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Productcode</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De aanduiding die het product uniek identificeert binnen de productencatalogus.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>30-4-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td>8</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Voor een producttype dat geen productuitvoering is van een ander producttype: de 1e vijf posities cijfers en letters, overige posities leeg.  
+Voor een producttype dat een productuitvoering is van een ander producttype: de 1e vijf posities de productcode van het producttype waarvan het een productuitvoering is, overige posities cijfers en letters waarvan positie 6 ook leestekens.   </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Deze attribuutsoort vormt tezamen met 'Domein' en (eventueel, voor een organisatiespecifieke catalogus) 'Kv­K-nummer' van PRODUCTENCATALOGUS de unieke aanduiding van een Product voor geheel Nederland.</section>
+            </section>
+            <section id="detail_association_Model_PRODUCTTYPE_isexemplaarvan"><h4>Relatiesoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> is exemplaar van</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>is exemplaar van</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PRODUCT">PRODUCT</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie materiële historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_PRODUCTTYPE_draagtbijaan"><h4>Relatiesoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> draagt bij aan</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>draagt bij aan</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Het andere producttype waarvoor het producttype benodigd is om een product van dat andere producttype te kunnen leveren.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>1-3-2021</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie materiële historie</th><td>Ja</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Regels</th><td>
+                        <p>1. De relatiesoort is alleen gelegd indien het producttype niet ontleend is aan een referentieproducttype (relatiesoort 'PRODUCT betreft PRODUCT' is niet aanwezig).  </p>
+                        <p>2. Het gerelateerde PRODUCTTYPE maakt deel uit van dezelfde PRODUCTENCATALOGUS als die van het onderhavige PRODUCTTYPE (relatiesoort 'PRODUCTTYPE is gespecificeerd in PRODUCTENCATALOGUS').  </p>
+                        <p>3. De relatie wijzigt alleen gelijktijdig met een waardewijziging van de attribuutsoort 'Versie' van de bijbehorende PRODUCTENCATALOGUS.  </p>
+                     </td></tr></tbody></table>
+               
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Het product kan een bijdrage leveren aan andere producten. Denk aan een specialistisch advies dat in specifieke situaties nodig is voordat een vergunning kan worden verleend. Of een individuele studietoeslag als onderdeel van een bijstandsuitkering. Het product wordt in dergelijke gevallen als bouwsteen of halffabricaat gebruikt voor het produceren van andere producten en verhogen de kostprijs van het andere product.  </p>
+                           <p>Het schept de mogelijkheid om bij ontvangst van een bestelling van een product direct inzicht te krijgen in andere producten, bijvoorbeeld van ketenpartners, die voor de levering van de bestelling benodigd zijn.  </p>
+                           <p>Qua gerelateerd product, dat kan een product in een andere catalogus zijn. Maar, een product in een referentiecatalogus kan alleen verwijzen naar een ander product in een referentiecatalogus; een product in een operationele catalogus kan alleen verwijzen naar een ander product in een operationele cataogus.  </p>
+                        </section>
+            </section>
+            <section id="detail_association_Model_PRODUCTTYPE_isgespecificeerdin"><h4>Relatiesoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> is gespecificeerd in</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>is gespecificeerd in</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PRODUCTENCATALOGUS">PRODUCTENCATALOGUS</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De PRODUCTENCATALOGUS waarin het PRODUCT is opgenomen. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>30-4-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie materiële historie</th><td>Ja</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_PRODUCTTYPE_betreft"><h4>Relatiesoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> betreft</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>betreft</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Het referentieproduct dat als product is overgenomen in de productencatalogus. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>30-4-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie materiële historie</th><td>Ja</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Regels</th><td>
+                        <p>1. Het gerelateerde PRODUCTTYPE maakt deel uit van een referentie PRODUCTENCATALOGUS d.w.z. waarvan de attribuutsoort 'Refentie-PDC' de waarde "ja" heeft.  </p>
+                        <p>2. Het gerelateerde PRODUCTTYPE maakt deel uit van een referentie PRODUCTENCATALOGUS die gerelateerd is aan de PRODUCTENCATALOGUS van het onderhavige PRODUCTTYPE d.m.v. de relatie 'PRODUCTENCATALOGUS is gespecificeerd voor PRODUCTENCATALOGUS'.  </p>
+                        <p>3. De relatie wijzigt alleen gelijktijdig met een waardewijziging van de attribuutsoort 'Versie' van de bijbehorende PRODUCTENCATALOGUS. </p>
+                        <p></p>
+                     </td></tr></tbody></table>
+               
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Met de relatiesoort wordt vastgelegd of een product in een productencatalogus ontleend is aan een referentiecatalogus en zo, ja welk product in welke catalogus dat is. Dat laatste kan alleen producten betreffen die opgenomen zijn in referentieproductencatalogi die gerelateerd zijn aan de productencatalogus waarvan het product deel uit maakt. </p>
+                           <p>Het kan een product in een organisatiespecifieke productencatalogus betreffen maar ook een product in een referentiecatalogus dat ontleend wordt aan een andere referentiecatalogus.  </p>
+                           <p>Is het product niet afgeleid van een referentieproduct, dan wordt deze relatie niet gelegd (en is het een in de productencatalogus zelf gedefinieerd product).  </p>
+                        </section>
+            </section>
+            <section id="detail_association_Model_PRODUCTTYPE_isproductuitvoeringvan"><h4>Relatiesoort details  <a href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a> is productuitvoering van</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>is productuitvoering van</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PRODUCTTYPE">PRODUCTTYPE</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td>Im­PDC-werkgroep</td></tr><tr><th scope="row">Definitie</th><td>Een specifieke manier waarop een product van het PRODUCTTYPE vervaardigd wordt.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>27-2-2023</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie materiële historie</th><td>Ja</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td> </td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Regels</th><td>
+                        <p>1. De relatiesoort is alleen gelegd indien het producttype niet ontleend is aan een referentieproducttype (relatiesoort 'PRODUCT betreft PRODUCT' is niet aanwezig).  </p>
+                        <p>2. Het gerelateerde PRODUCTTYPE maakt deel uit van dezelfde PRODUCTENCATALOGUS als die van het onderhavige PRODUCTTYPE (relatiesoort 'PRODUCTTYPE is gespecificeerd in PRODUCTENCATALOGUS').  </p>
+                        <p>3. De relatie wijzigt alleen gelijktijdig met een waardewijziging van de attribuutsoort 'Versie' van de bijbehorende PRODUCTENCATALOGUS.  </p>
+                     </td></tr></tbody></table>
+               
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Een producttype kan eventueel in verschillende uitvoeringen geleverd worden. Die (product)uitvoeringen zijn ook weer producttypen.  </p>
+                           <p>Een productuitvoering in een organisatiespecifieke catalogus kan overgenomen worden uit een desbetreffende refererentiecatalogus. Er kan voor gekozen worden om bij een product in een refererentiecatalogus niet alle daarbij opgenomen productuitvoeringen over te nemen in de organisatiespecifieke catalogus.  </p>
+                        </section>
+            </section>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+         </section><section id="detail_class_Model_Productaspectbeschrijving"><h3>Gegevensgroeptype   Productaspectbeschrijving</h3>
+            <section id="detail_attribute_Model_Productaspectbeschrijving_Onderwerp"><h4>Attribuutsoort details  <a href="#global_class_Model_Productaspectbeschrijving">Productaspectbeschrijving</a> Onderwerp</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Onderwerp</td></tr><tr><th scope="row">Herkomst</th><td>Im­PDC-werkgroep</td></tr><tr><th scope="row">Definitie</th><td>Benaming, in de desbetreffende taal, van het aspect van het producttype dat beschreven wordt. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>27-4-2023</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Productaspectonderwerp">Productaspectonderwerp</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Referentie-element 'Onderwerp' in genoemde referentielijst.</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Het onderwerp benoemd het aspect van het producttype dat beschreven wordt. De onderwerp-benamingen worden ontleend aan een referentielijst.  </p>
+                           <p>Voorbeelden van onderwerpen zijn 'procedurebeschrijving', 'vereisten', 'bewijs', 'bezwaar en beroep', 'kosten en betaalmethoden', 'uiterste termijn' en 'wat te doen bij geen reactie'.  </p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_Productaspectbeschrijving_Uitleg"><h4>Attribuutsoort details  <a href="#global_class_Model_Productaspectbeschrijving">Productaspectbeschrijving</a> Uitleg</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Uitleg</td></tr><tr><th scope="row">Herkomst</th><td>Im­PDC-werkgroep</td></tr><tr><th scope="row">Definitie</th><td>De beschrijving van het aspect van het producttype in de desbetreffende taal.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>27-4-2023</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>markdown-formaat</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>De beschrijving wordt in markdown-formaat gesteld, in de desbetreffende taal. Figuren worden hierin niet opgenomen, wel kan een link naar een (bestand met een) figuur opgenomen worden. </section>
+            </section>
+         </section><section id="detail_class_Model_Taalafhankelijkeproductbeschrijving"><h3>Gegevensgroeptype   Taalafhankelijke productbeschrijving</h3>
+            <section id="detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Omschrijving"><h4>Attribuutsoort details  <a href="#global_class_Model_Taalafhankelijkeproductbeschrijving">Taalafhankelijke productbeschrijving</a> Omschrijving</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Omschrijving</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Een bondige beschrijving van het producttype. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>30-4-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Markdown-formaat.</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Betreft een korte omschrijving van het producttype, in telkens één van de talen die relevant is voor de doelgroep, die onder meer gebruikt kan worden om te tonen wanneer de pagina wordt gevonden in een zoekmachine.  </section>
+            </section>
+            <section id="detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Productnaam"><h4>Attribuutsoort details  <a href="#global_class_Model_Taalafhankelijkeproductbeschrijving">Taalafhankelijke productbeschrijving</a> Productnaam</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Productnaam</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De korte benaming van het product.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>30-4-2020</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td>255</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Letters en cijfers</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Het gaat om een unieke en betekenisvolle benaming voor de doelgroep van het producttype cq. de productencatalogus in telkens één van de talen die relevant is voor de doelgroep.   </section>
+            </section>
+            <section id="detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Taal"><h4>Attribuutsoort details  <a href="#global_class_Model_Taalafhankelijkeproductbeschrijving">Taalafhankelijke productbeschrijving</a> Taal</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Taal</td></tr><tr><th scope="row">Herkomst</th><td>Im­PDC-werkgroep</td></tr><tr><th scope="row">Definitie</th><td>De taal waarin de productbeschrijvingen gesteld zijn. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>27-4-2023</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td>2</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Waarden conform ISO 639-1: a standardized nomenclature used to classify languages' (https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)]</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Geeft aan in welke taal de productbeschrijvende teksten gesteld zijn. Voor de specificatie van die taal worden de codes uit ISO 639-1 gebruikt.  </section>
+            </section>
+            <section id="detail_attribute_Model_Taalafhankelijkeproductbeschrijving_Trefwoord"><h4>Attribuutsoort details  <a href="#global_class_Model_Taalafhankelijkeproductbeschrijving">Taalafhankelijke productbeschrijving</a> Trefwoord</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Trefwoord</td></tr><tr><th scope="row">Herkomst</th><td>Im­PDC-werkgroep</td></tr><tr><th scope="row">Definitie</th><td>Woord waarmee het producttype gekarakteriseerd wordt. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>10-3-2023</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Landelijk kerngegeven</td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>letters</td></tr><tr><th scope="row">Indicatie afleidbaar</th><td> </td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Is vooral bedoeld om het producttype te kunnen vinden via verschillende zoekargumenten.  </p>
+                           <p>Meerdere trefwoorden zijn mogelijk. Kan ook gebruikt worden om synoniemen voor de naam van het producttype te benoemen. </p>
+                        </section>
+            </section>
+         </section><section id="detail_class_Model_Domein"><h3>Referentielijst   Domein</h3>
+            <section id="detail_attribute_Model_Domein_Domeincode"><h4>Referentie element  <a href="#global_class_Model_Domein">Domein</a> Domeincode</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Domeincode</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De code waarmee  het aandachtsgebied geduid wordt waarop een PDC gericht is.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>maximaal 5 hoofdletters</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>De code duidt uniek het domein en bestaat uit maximaal vijf hoofdletters.  </section>
+            </section>
+            <section id="detail_attribute_Model_Domein_Domeinomschrijviing"><h4>Referentie element  <a href="#global_class_Model_Domein">Domein</a> Domeinomschrijviing</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Domeinomschrijviing</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Bondige beschrijving van het aandachtsgebied waarop een PDC gericht is.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>markdown-format</td></tr></tbody></table>
+            </section>
+         </section><section id="detail_class_Model_Productaspectonderwerp"><h3>Referentielijst   Productaspectonderwerp</h3>
+            <section id="detail_attribute_Model_Productaspectonderwerp_Omschrijving"><h4>Referentie element  <a href="#global_class_Model_Productaspectonderwerp">Productaspectonderwerp</a> Omschrijving</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Omschrijving</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Een bondige beschrijving van het onderwerp. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>markdown-format</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>De omschrijving kan bijvoorbeeld gebruikt worden om op een webpagina de betekenis van het onderwerp toe te kunnen lichten. </section>
+            </section>
+            <section id="detail_attribute_Model_Productaspectonderwerp_Onderwerp"><h4>Referentie element  <a href="#global_class_Model_Productaspectonderwerp">Productaspectonderwerp</a> Onderwerp</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Onderwerp</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Benaming, in de desbetreffende taal, van een aspect waarnaar een producttype beschreven kan worden. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Maximaal 60 posiies letters, cijfers en leestekens</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>De combinatie van Onderwerp en Taal is uniek in de referentielijst.  </section>
+            </section>
+            <section id="detail_attribute_Model_Productaspectonderwerp_PDCdomein"><h4>Referentie element  <a href="#global_class_Model_Productaspectonderwerp">Productaspectonderwerp</a> PDC-domein</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>PDC-domein</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Het aandachtsgebied van de PDC waarvoor het onderwerp geldt. .</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Domein">Domein</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Referentie-element 'Domeincode' in genoemde referentieljst.</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Indien een onderwerp niet landelijk geldt, kan dit voor een specifieke PDC benoemd worden. Dit vindt plaats d.m.v. de Id van die PDC, bestaande uit de organisatie-Id en de domeinspecificatie, bij het onderwerp op te nemen.  </p>
+                           <p>De attribuutsoort moet van een waarde zijn voorzien indien de attribuutsoort PDC-organisatie-Id een waarde heeft.  </p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_Productaspectonderwerp_PDCorganisatieId"><h4>Referentie element  <a href="#global_class_Model_Productaspectonderwerp">Productaspectonderwerp</a> PDC-organisatie-Id</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>PDC-organisatie-Id</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De organisatie die verantwoordelijk is voor de PDC waarvoor het onderwerp geldt.</td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Indien OIN: indeling OIN (20 cijfers). Indien Kv­K-nummer: "00000003" gevolgd door het KVK-nummer (8 posities, met evt. voorloopnullen) (in totaal 16 cijfers).</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>
+                           <p>Indien een onderwerp niet landelijk geldt, kan dit voor een specifieke PDC benoemd worden. Dit vindt plaats d.m.v. de Id van die PDC, bestaande uit de organisatie-Id en de domeinspecificatie, bij het onderwerp op te nemen.  </p>
+                           <p>De attribuutsoort moet van een waarde zijn voorzien indien de attribuutsoort PDC-domein een waarde heeft.  </p>
+                        </section>
+            </section>
+            <section id="detail_attribute_Model_Productaspectonderwerp_Taal"><h4>Referentie element  <a href="#global_class_Model_Productaspectonderwerp">Productaspectonderwerp</a> Taal</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Taal</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De aanduiding van de taal waarin het onderwerp gesteld is. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>Waarden conform ISO 639-1: a standardized nomenclature used to classify languages' (https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>De combinatie van Onderwerp en Taal is uniek in de referentielijst.  </section>
+            </section>
+            <section id="detail_attribute_Model_Productaspectonderwerp_Toelichting"><h4>Referentie element  <a href="#global_class_Model_Productaspectonderwerp">Productaspectonderwerp</a> Toelichting</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Toelichting</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>Opmerkingen over herkomst en gebruik van het onderwerp. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td>markdown-format</td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Is bedoeld voor beheerders van PDC's. Zo kan bijvoorbeeld vastgelegd worden aan welke cataogus het onderwerp is ontleend.  </section>
+            </section>
+            <section id="detail_association_Model_Productaspectonderwerp_istaalvariantvan"><h4>Relatiesoort details  <a href="#global_class_Model_Productaspectonderwerp">Productaspectonderwerp</a> is taalvariant van</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>is taalvariant van</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_Productaspectonderwerp">Productaspectonderwerp</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De nederlandstalige benaming van het productaspectonderwerp van het inhoudelijk gelijke productaspectonderwerp met een benaming in een niet-nederlandse taal.  </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>13-6-2023</td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie materiële historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>  </td></tr><tr><th scope="row">Regels</th><td>
+                        <p>1. De relatie mag alleen gelegd worden bij een productaspectonderwerp waarvan de attribuutsoort 'Taal' een waarde ongelijk "nl" heeft.  </p>
+                        <p>2. De relatie mag alleen gelegd worden naar een productaspectonderwerp waarvan de attribuutsoort 'Taal' de waarde  "nl" heeft.  </p>
+                     </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_UPLproducttype"><h3>Referentielijst   UPL-producttype</h3>
+            <section id="detail_attribute_Model_UPLproducttype_UPLproductnaam"><h4>Referentie element  <a href="#global_class_Model_UPLproducttype">UPL-producttype</a> UPL-productnaam</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>UPL-productnaam</td></tr><tr><th scope="row">Herkomst</th><td>VNG-R</td></tr><tr><th scope="row">Definitie</th><td>De benaming van een product in de Uniforme Productnamen­Lijst. </td></tr><tr><th scope="row">Herkomst definitie</th><td>VNG-R</td></tr><tr><th scope="row">Datum opname</th><td>20-6-2023</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr></tbody></table>
+               <section class="notoc"><h5>Toelichting  </h5>Het gaat hier om een product(type) uit de Uniforme Productnamenlijst (UPL). Dit is een lijst met uniforme naamgeving voor de producten en diensten van de Nederlandse overheid. De UPL is onderdeel van de Samenwerkende Catalogi-standaard. Zie verder https://standaarden.overheid.nl/upl</section>
+            </section>
+         </section><section id="detail_class_Model_doelgroep"><h3>Enumeratie details  doelgroep</h3>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     Waardenlijst van de groepen van afnemers waarvoor de productencatalogus bedoeld is. 
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 20%;"></colgroup><colgroup></colgroup><tbody><tr><th scope="col">Waarde</th><th scope="col">Omschrijving</th></tr><tr><td>bedrijven en instellingen</td><td></td></tr><tr><td>burgers</td><td></td></tr><tr><td>samenwerkingspartners</td><td></td></tr><tr><td>interne organisatie</td><td></td></tr></tbody></table>
+         </section><section id="detail_class_Model_soort_bevoegd_gezag"><h3>Enumeratie details  soort_bevoegd_gezag</h3>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     Waardenlijst van de soorten bestuursorgaan die wettelijk bevoegd zijn producten te leveren. 
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 20%;"></colgroup><colgroup></colgroup><tbody><tr><th scope="col">Waarde</th><th scope="col">Omschrijving</th></tr><tr><td>gemeente</td><td></td></tr><tr><td>provincie</td><td></td></tr><tr><td>rijksoverheid</td><td></td></tr><tr><td>waterschap</td><td></td></tr></tbody></table>
+         </section>
